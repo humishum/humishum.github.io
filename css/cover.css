@@ -13,7 +13,7 @@ a:hover {
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
+  color: #0090fa;
   text-shadow: none; /* Prevent inheritence from `body` */
   background-color: #fff;
   border: 1px solid #fff;
@@ -89,7 +89,7 @@ p{
 }
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
-  background-color: transparent;
+  background-color: currentColor;
   border-bottom-color: #a9a9a9;
   border-bottom-color: rgba(255,255,255,.25);
 }
@@ -128,8 +128,10 @@ p{
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+  color: #fff; /* IE8 proofing */
+  color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 20px;
+    padding-right: 10px;
 }
 
 
@@ -179,7 +181,7 @@ html, body {
         min-width: 1024px;
         width: 100%;
         height: auto;
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
       }
@@ -202,7 +204,7 @@ html, body {
       a.to-top:hover {
         margin-top: 1000px;
         display: block;
-        font-weight: bold;
+        font-weight: normal;
         padding-bottom: 30px;
         font-size: 30px;
       }
