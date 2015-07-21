@@ -1,0 +1,75 @@
+body {
+	background: url() no-repeat center center fixed;
+	background-size: cover;
+	
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+ 	
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1s; /* Firefox < 16 */
+    -ms-animation: fadein 1s; /* Internet Explorer */
+  	-o-animation: fadein 1s; /* Opera < 12.1 */
+    animation: fadein 1s;
+}
+
+h1 {
+  
+    text-align: center;
+    font-size: 400%;
+    
+    
+}
+
+/*Navbar start */
+#navbar {
+        color: #ff0d0d;
+    font-family:monospace;
+    
+}
+
+#location {
+ text-align: center;
+    font-size:  180%
+}
+.navbar-custom {
+ text-emphasis-color:#fd0808;
+margin: 20px;
+    background-image:none;
+}
+.navbar-inner {
+    background-image: none;
+  background: none !important; 
+  border: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.navbar-custom .nav .active > a {
+  background: 0 !important; 
+  color: #333 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+    
+}
+
+.navbar-custom .nav > li > a {
+  color: #333 !important;
+  text-shadow: none !important;
+}
+
+.navbar-custom .nav > li > a:hover {
+  color: #333 !important;
+}
+#navcontact{
+    
+}
+/*Front page START*/
+#front {
+ 
+    padding:150px;
+}
+#frontDescription{
+    text-align: center;
+    font-size: 250%;
+    
+}
