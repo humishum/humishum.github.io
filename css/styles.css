@@ -11,65 +11,71 @@ body {
   	-o-animation: fadein 1s; /* Opera < 12.1 */
     animation: fadein 1s;
 }
-
 h1 {
-  
     text-align: center;
-    font-size: 400%;
-    
-    
+    font-size: 400%;  
 }
 
 /*Navbar start */
-#navbar {
-        color: #ff0d0d;
-    font-family:monospace;
-    
+.navbar {
+    text-transform: uppercase;   
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
 }
-
 #location {
- text-align: center;
+    text-align: center;
     font-size:  180%
 }
 .navbar-custom {
- text-emphasis-color:#fd0808;
-margin: 20px;
+    text-emphasis-color:#fd0808;
+    margin: 20px;
     background-image:none;
 }
 .navbar-inner {
     background-image: none;
-  background: none !important; 
-  border: 0 !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
+    background: none !important; 
+    border: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
 }
-
 .navbar-custom .nav .active > a {
-  background: 0 !important; 
-  color: #333 !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
+    background: 0 !important; 
+    color: #333 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
     
 }
-
 .navbar-custom .nav > li > a {
-  color: #333 !important;
-  text-shadow: none !important;
+    color: #333 !important;
+    text-shadow: none !important;
 }
 
 .navbar-custom .nav > li > a:hover {
-  color: #333 !important;
+    color: #333 !important;
 }
 #navcontact{
     
 }
-/*Front page START*/
-#front {
- 
-    padding:150px;
+/* Home Page */
+
+/*About Page */
+
+/*Projects Page */
+
+h1 {
+    padding-top: 50px;    
 }
-#frontDescription{
-    text-align: center;
-    font-size: 250%;
-    
+.portfolio-item {
+    box-sizing: border-box;
+    color: rgb(44, 62, 80);
+    display: block;
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 25px;
+    line-height: 21.4285717010498px;
+    padding-bottom: 75px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 75px;
+    width: 750px;  
 }
