@@ -1,81 +1,24 @@
-body {
-	background: url() no-repeat center center fixed;
-	background-size: cover;
-	
-	text-align: center;
-	-webkit-font-smoothing: antialiased;
- 	
-    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 1s; /* Firefox < 16 */
-    -ms-animation: fadein 1s; /* Internet Explorer */
-  	-o-animation: fadein 1s; /* Opera < 12.1 */
-    animation: fadein 1s;
+#front{
+padding-top: 440px;
+padding-left: 130px;
 }
-h1 {
-    text-align: center;
-    font-size: 400%;  
+#navbar-custom {
+    color: transparent; 
+    
 }
-
-/*Navbar start */
 .navbar {
-    text-transform: uppercase;   
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
-}
-#location {
-    text-align: center;
-    font-size:  180%
-}
-.navbar-custom {
-    text-emphasis-color:#fd0808;
-    margin: 20px;
-    background-image:none;
-}
-.navbar-inner {
-    background-image: none;
-    background: none !important; 
-    border: 0 !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-}
-.navbar-custom .nav .active > a {
-    background: 0 !important; 
-    color: #333 !important;
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    
-}
-.navbar-custom .nav > li > a {
-    color: #333 !important;
-    text-shadow: none !important;
-}
-
-.navbar-custom .nav > li > a:hover {
-    color: #333 !important;
-}
-#navcontact{
-    
-}
-/* Home Page */
-
-/*About Page */
-
-/*Projects Page */
-
-h1 {
-    padding-top: 50px;    
-}
-.portfolio-item {
-    box-sizing: border-box;
-    color: rgb(44, 62, 80);
-    display: block;
-    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    height: 25px;
-    line-height: 21.4285717010498px;
-    padding-bottom: 75px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 75px;
-    width: 750px;  
-}
+  background: none;
+  border: 0;
+  text-transform: uppercase; }
+  .navbar .container, .navbar .display .fluid-container, .display .navbar .fluid-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 50px; }
+  .navbar .brand, .navbar a {
+    padding: 25px 27px !important;
+    color: #2b2b2b;
+    font-size: 18px;
+    font-family: "Varela", sans-serif;
+    font-weight: 400; }
+    .navbar .brand:hover, .navbar a:hover {
+      color: #1d1d1d; }
