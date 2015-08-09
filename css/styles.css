@@ -1,6 +1,16 @@
 #front{
-padding-top: 440px;
-padding-left: 130px;
+margin: 0 auto 0 5%;
+position: relative;
+text-align: left;
+padding: 25px 50px;
+font-weight: 200;
+top: 75%;
+-webkit-transform: translateY(-75%);
+-ms-transform: translateY(-75%); 
+transform: translateY(-75%);
+   
+font-size: 130px;
+
 }
 #navbar-custom {
     color: transparent; 
@@ -10,15 +20,26 @@ padding-left: 130px;
   background: none;
   border: 0;
   text-transform: uppercase; }
-  .navbar .container, .navbar .display .fluid-container, .display .navbar .fluid-container {
+
+.navbar .container, .navbar .display .fluid-container, .display .navbar .fluid-container {
     width: 90%;
     margin: 0 auto;
     padding: 0 50px; }
-  .navbar .brand, .navbar a {
-    padding: 25px 27px !important;
-    color: #2b2b2b;
+
+.navbar .brand, .navbar a {
+    padding: 25px !important;
+    color: #ffffff;
     font-size: 18px;
     font-family: "Varela", sans-serif;
     font-weight: 400; }
-    .navbar .brand:hover, .navbar a:hover {
+
+.navbar .brand:hover, .navbar a:hover {
       color: #1d1d1d; }
+#projects{
+ width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 50px 0;
+  background-color: #3498db;
+  color: #F7F7F7;   
+}
