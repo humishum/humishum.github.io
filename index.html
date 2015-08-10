@@ -6,16 +6,15 @@
     <!--Custom CSS, Bootstrap, Animate -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/styles.css" >
-    <link rel="stylesheet" href="normalize.css/normalize.css">
     <link rel="icon" href="Images/personallogo.png">
 </head>
+    
 <body>
     <!--Navbar -->
- <nav class="navbar navbar-custom navbar-fixed-top navbar-scroll">
-            <div class="container">
+ <nav class="navbar navbar-default navbar-fixed-top navbar-scroll">
+            <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -37,60 +36,65 @@
     <div class="front">
         <div class="container-fluid">
             <h1>Humdaan Mustafa</h1>
-                <h2>Developer, Web Designer, Learner </h2>
-        </div>
-    </div>
-    <div class="about">
-        <div class="container-fluid">
-                <h1>Hey, I'm Humdaan</h1>
-            <h3> I'm currently a junior at Mission San Jose High School. I love web development<br> and product design. I'm always passionate in what I make. I also like taking pictures,<br>longboarding, and hiking.</h3>
+                <h2>Developer|Learner </h2>
         </div>
     </div>
     
+    
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Hey, I'm Humdaan</h2>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>I'm currently a junior at Mission San Jose High School who is passionate about web development and product design.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p> I'm a full stack web developer, who loves building things. I specialize in MongoDB, Express, Angular, and NodeJS(MEAN) and I love building with those tools.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center" >
+                <br>
+              <a href="ResumeHumdaanM.pdf" class="btn btn-danger btn-lg">View Resume</a>
+                    
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    
     <div class="projects">
         <div class="container-fluid">
-        <h1>Projects</h1>
             <div class="container">
-                <h1 class="title">Portfolio</h1>
                 <div class="row">
-                    
-                    <div class="col-md-4">
-                        <a href="#" target="_blank">
-                            <div class="work" style="background: url(images/texticate.png) no-repeat bottom center scroll;">
-                                <div class="show">
-                                    <h1 class="name" >Texticate</h1>
-                                    <p class="details">Read news on-the-go without wi-fi or data, just a regular connection!</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <h1>Portfolio</h1>
                 </div>
-                    
-                    <div class="row">
-                    <div class="col-md-4">
-                        <a href="https://instagrocr.com" target="_blank">
-                            <div class="work" style="background: url(images/projects/infuture.png) no-repeat center center scroll;">
-                                <div class="show">
-                                    <h1 class="name">Instagrocr</h1>
-                                    <p class="hover">Stop waiting in line for groceries</p>
-                                </div>
+                  <div class="row">
+                <div class="col-lg-4 portfolio-item">
+                    <a href="texticate.herokuapp.com" >
+                        
+                        <img src="Images/texticate.png" class="img-responsive" alt="">
+                    </a>
+                    <p>Texticate- A revolutionary new way to read news articles over SMS w/o the need of wi-fi or data.</p>
+                </div>
+                <div class="col-lg-4 portfolio-item">
+                    <a href="instagrocr.com" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" target="_blank">
-                            <div class="work" style="background: url(images/projects/monomo.png) no-repeat center center scroll;">
-                                <div class="show">
-                                    <h1 class="name">Belsh</h1>
-                                    <p class="details">Belsh is a CSS template I created to make website beautiful with Twitter Bootstrap</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                        <img src="#" class="img-responsive" alt="">
+                    </a>
+                    <p> Instagrocr- Never wait in line for your groceries again.</p>
+                </div>
                 </div>
             </div>
         </div>
-    </div>
+
     
     <div class="contact">
     <div class="container-fluid">
@@ -104,7 +108,51 @@
         </p>
         </div>
     </div>
-
+ <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    
+                    <div  class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            
+                            <li>
+                                <a href="https://www.facebook.com/humdaan.mustafa" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                           
+                            
+                            <li>
+                                <a href="https://github.com/humishum" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Humdaan Mustafa 2015 ---- This website is still a work in progress :) View the code on <a href="http://github.com/humishum/humishum.github.io" >github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to top button for tiny screens :) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 </body>    
     
 </html>

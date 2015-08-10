@@ -5,10 +5,7 @@ html{
     padding: 0;
     
 }
-#navbar-custom {
-    color: transparent; 
-    
-}
+
 .navbar {
   background: none;
   border: 0;
@@ -58,35 +55,36 @@ html{
 
 .front{
 position:relative;
-    padding-top: 20%;
+padding-top: 20%;
 top: 0;
 left: 0;
 bottom: 0;
 right: 0;
-    
-    height: 100%;
-    width: 100%;
-font-weight: 200;
+height: 100%;
+width: 100%;
+font-weight: 900;
+font-size: 900%;
 text-align: center;
 }
 
 .about{
 position: relative;
 text-align:center ;
-padding: 1.5em 3.125em;
-padding-top: .6em;
+padding-bottom: 2%;
+margin-top: 0%;
 background-color:#3498db;
-height: 50%;
 width:100%;
+font-size: 190%;
 }
 
 .projects{
-margin: 0 auto 0 5%;
 position: relative;
 text-align:center ;
-padding: 25px 50px;
-padding-top: 25px 50px;
-
+padding-bottom: 2%;
+margin-top: 0%;
+background-color:#3489c3;
+width:100%;
+    padding-top: 2%;
 }
 
 #center{
