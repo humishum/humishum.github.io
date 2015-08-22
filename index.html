@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/styles.css" >
     <link rel="icon" href="Images/personallogo.png">
 </head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="js/jquery.typer.js"></script>
     
 <body>
     <!--Navbar -->
@@ -36,7 +38,7 @@
     <div class="front">
         <div class="container-fluid">
             <h1>Humdaan Mustafa</h1>
-                <h2>Developer|Learner </h2>
+                <h2 data-typer-targets="I love to Code,I love to Design,I love to Sleep,I love to Hack,I love to Longboard,I love to Hike,I love to Learn" >Code</h2>
         </div>
     </div>
     
@@ -153,6 +155,11 @@
             <i class="fa fa-chevron-up"></i>
         </a>
     </div>
+          <script>
+    $(function () {
+      $('[data-typer-targets]').typer();
+    });
+  </script>
 </body>    
     
 </html>
