@@ -3,7 +3,7 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-    
+
 }
 
 .navbar {
@@ -50,8 +50,8 @@ html{
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  -webkit-background-size: cover;   
-    
+  -webkit-background-size: cover;
+
 }
 
 .front{
