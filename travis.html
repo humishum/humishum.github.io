@@ -1,9 +1,67 @@
+
+<!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" href="travis.css">
-	<link rel="stylesheet" href="old%2520website/bootstrap/">
+  <title>IT'S HAPPENING</title>
+  <link rel="stylesheet" href="http://code.divshot.com/geo-bootstrap/swatch/bootstrap.css">
+  <link rel="stylesheet" href="travis.css">
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
 </head>
-	<body class="travis">
-		did birds drop yet?
-	</body>
-<html>
+<body class="travis">
+<div class="container rain">
+<div class="row">
+  <div class="col-sm-3">
+    <h1>Did Birds drop?</h1>
+  </div>
+  <div class="col-sm-9">
+      <div class=" well-spin">
+        BIRDS IN TRAP SING MC SIKE 
+      </div>
+  </div>
+	<div class="col-sm-3 well-spin">
+	<h1> travis scoooooooooottttt </h1>
+		<br>
+		<h1>four up</h1>
+		<h1> saurjya is mad bc apple music</h1>
+	</div>
+</div>
+</div>
+<script src="emojify.min.js"></script>
+<script>
+  emojify.run();
+</script>
+<script>
+// number of drops created.
+var nbDrop = 50; 
+
+// function to generate a random number range.
+function randRange( minNum, maxNum) {
+  return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+}
+
+// function to generate drops
+function createRain() {
+
+  for( i=1;i<nbDrop;i++) {
+  var dropLeft = randRange(0,1600);
+  var dropTop = randRange(-1000,1400);
+
+  $('.rain').append('<div class="drop" id="drop'+i+'"></div>');
+  $('#drop'+i).css('left',dropLeft);
+  $('#drop'+i).css('top',dropTop);
+  }
+
+}
+</script>
+<script>
+  $('.well-spin').click(function() {
+    $(this).fadeOut(1500);
+  });
+  $('.well-spin').click(function(){
+    $('#rejected').removeClass('hidden');
+  });
+  $('.well-spin').click(function(){createRain();});
+</script>
+</body>
+</html>
