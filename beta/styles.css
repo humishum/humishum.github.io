@@ -1,0 +1,25 @@
+.img-header{
+	width: 20%;
+}
+
+.blue-highlight{
+	color: #0ec7eb;
+		font-weight: 850;
+
+}
+.header{
+	font-weight: 350;
+	
+}
+.red-highlight{
+	color: #e04949;
+			font-weight: 850;
+
+}
+.spacer{
+	margin-top: 50px;
+}
+html {
+	
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
