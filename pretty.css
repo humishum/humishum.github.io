@@ -1,86 +1,17 @@
-/*.wrapper{
-	text-align: center;
-	width:50%;
-
-}
-.profile{
-	border-radius: 100px;
-	width:10%;
-	height: 10%;
-}
-body{
-	font-family: Nova Round;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24px;
-	line-height: 29px;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.04em;
-}
-.flex-container{
-	width:45%;
-	display: flex;
-	flex-direction: row;
-	justify-content:  center;
-}
-.paragraph{
-width:45%;
-margin: 0 auto;
-}
-.footnote{
-	padding-top: 5%;
-	clear:both;
-}
-.red_color{
-	color: #EB5757;
-}
-.green_color{
-	color: #219653;
-}
-.light-blue_color{
-	color: #56CCF2;
-}
-.orange_color{
-	color: #F2994A;
-}
-.blue_color{
-	color: #2D9CDB;
-}
-.dark-green_color{
-	color: #219653;
-}*/
-
-/*
- * Globals
- */
-
-/* Links */
 a,
 a:focus,
 a:hover {
-  color: #fff;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
 }
-
-
-/*
- * Base structure
- */
 
 html,
 body {
-  height: 100%;
-  font-family:Nova Round;
+  	height: 100%;
+  	font-family:Nova Round;
+  	font-style: normal;
+	font-weight: normal;
+	font-size: 1.1em;
+
 }
 
 body {
@@ -91,6 +22,12 @@ body {
 .cover-container {
   max-width: 45em;
 }
+.cover-heading { 
+	margin-bottom: 1rem;
+ }
+ .lead{
+ 	margin-top: 1rem;
+ }
 /*
  * Header
  */
@@ -148,5 +85,18 @@ body {
  * Footer
  */
 .mastfoot {
-  color: rgba(0, 0, 0, .5);
+  color: rgb(0, 0, 0);
+}
+
+.red{
+	color:#EB5757;
+}
+.blue{
+	color:#2D9CDB;
+}
+.orange{
+	color:#F2994A;
+}
+.green{
+	color:#219653;
 }

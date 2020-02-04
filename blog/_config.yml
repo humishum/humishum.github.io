@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Edge Of Chaos
+title: Edge Of Chaos Blog
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   WHere's a description of the blog!!!rite an awesome description for your new site here. You can edit this
@@ -62,11 +62,11 @@ plugins:
 author:
   name   : "Humdaan Mustafa"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Here's a bio about me"
   links:
-    - label: "Website"
+    - label: "Website Home"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://humdaan.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/humishum"
@@ -83,7 +83,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/humishum"
-
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin-in"
+      url: "https://linkedin.com/humdaanm"
 
 defaults:
   # _posts
