@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Writings</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nova+Round&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Nova Round', cursive;
+        }
+        .container {
+            padding-top: 50px;
+        }
+        #post-list {
+            max-width: 600px; /* Adjust this value as needed */
+            margin: auto;
+        }
+        .post-title {
+            font-size: 1.5rem; /* Larger font size */
+            margin-bottom: 10px; /* More space below each post */
+        }
+        .post-link {
+            text-decoration: none;
+            color: #000000;
+        }
+        .post-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="text-center">
+    <div class="container">
+        <h1 class="text-center">Assorted Writings</h1>
+        <div class="row">
+            <div class="col-12">
+                <ul id="post-list" class="list-unstyled">
+                    <!-- Posts will be added here by JavaScript -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="blog.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
