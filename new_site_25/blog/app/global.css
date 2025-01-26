@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 ::selection {
-  background-color: #47a3f3;
+  background-color: #343333;
   color: #fefefe;
 }
 
@@ -25,7 +25,7 @@
     --sh-string: #0fa295;
   }
   html {
-    color-scheme: dark;
+    color-scheme: light;
   }
 }
 
@@ -37,9 +37,12 @@ html {
   align-items: center;
   height: 100vh;
   color: black;
-  font-family: Nova Round;
+  font-family:'Trebuchet MS';
 }
 body {
+  color: black;
+}
+.prose { 
   color: black;
 }
 .prose .anchor {
@@ -94,7 +97,9 @@ body {
 
 .prose p {
   @apply my-4 text-neutral-800 dark:text-neutral-200;
+  color: black  !important;
 }
+
 
 .prose h1 {
   @apply text-4xl font-medium tracking-tight mt-6 mb-2;
