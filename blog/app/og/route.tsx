@@ -1,4 +1,4 @@
-import { ImageResponse } from 'next/og'
+import { ImageResponse } from 'next/server'
 
 export function GET(request: Request) {
   let url = new URL(request.url)
