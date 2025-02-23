@@ -66,7 +66,7 @@ export function BlogPosts({ directory, groupByMonth = false }: { directory: stri
           <h2 className="text-xl font-bold mt-8 mb-4">
             {monthEmojis[monthYear.split(' ')[0]] || '📅'} {monthYear}
           </h2>
-          {posts.map((post) => (
+          {(posts as any[]).map((post) => (
             <Link
               key={post.slug}
               className="flex flex-col space-y-1 mb-4"
