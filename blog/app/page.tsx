@@ -8,6 +8,7 @@ export default function Home() {
       <h1 className="text-5xl font-bold">humdaan's internet garage</h1>
       <nav className="flex space-x-6 mt-10 mb-4">
         <a href="/blog" className="text-4xl text-blue-500 hover:text-blue-700">blog</a>
+        <a href="/thought-stream" className="text-4xl text-green-500 hover:text-green-700">thought stream</a>
         {/* <a href="/apps" className="text-4xl text-green-500 hover:text-green-700">apps</a> */}
         {/* <a href="/shots" className="text-4xl text-orange-500 hover:text-orange-700">shots</a> */}
       </nav>
