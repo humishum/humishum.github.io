@@ -59,14 +59,29 @@ export function BlogPosts({ directory, groupByMonth = false }: { directory: stri
     return groups
   }, {})
 
+  // Sort months in reverse chronological order (newest first)
+  const sortedMonths = Object.entries(groupedByMonth).sort(([a], [b]) => {
+    const dateA = new Date(a)
+    const dateB = new Date(b)
+    return dateB.getTime() - dateA.getTime()
+  })
+
   return (
     <div>
-      {Object.entries(groupedByMonth).map(([monthYear, posts]) => (
+      {sortedMonths.map(([monthYear, posts]) => (
         <div key={monthYear}>
           <h2 className="text-xl font-bold mt-8 mb-4">
             {monthEmojis[monthYear.split(' ')[0]] || '📅'} {monthYear}
           </h2>
-          {(posts as any[]).map((post) => (
+          {(posts as any[])
+            .sort((a, b) => {
+              // Sort posts within each month in reverse chronological order (newest first)
+              if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
+                return -1
+              }
+              return 1
+            })
+            .map((post) => (
             <Link
               key={post.slug}
               className="flex flex-col space-y-1 mb-4"
