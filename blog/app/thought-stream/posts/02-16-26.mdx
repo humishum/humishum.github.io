@@ -1,0 +1,13 @@
+'---'
+title: 'Tasks need to be verifiable for agents to truly flourish'
+publishedAt: '2026-02-16'
+summary: 'Tasks need to be verifiable for agents to truly flourish'
+'---'
+
+In Q1 of 2026, it's fair to say that there has been real, tangible benefit in the world of software engineering. Wether it be handing off smaller development tasks to agents, getting ideas for design decisions, letting Claude Code/Codex take the wheel, the list goes on. And for the most part, many of us are confident in letting an agent take a task from start to finish, letting it evaluate the scope of the task, and letting it go loose on our credit cards until it's complete. And it's great, I can spend my morning discussing design decisions with teammates, I can kick off an agent before lunch, and come back to a completed feature. But this seems to only really work in software. And not broadly ALL types of software development, but really in environments where the bounds of the task are verifiable.
+
+Agents fail in places where their actions cannot be tested or verified. Why is that? A few hypotheses, with the first being that LLMs are not perfect at generalization. A model will only have knowledge of what the model is trained on + the additional information it can fit into it's context length. Let's say we're developing firmware for a 6 DOF arm, running off a custom SOC. Let's say we need to perform some arbitrary FW update to our system, it could be an update to the control loop, or speeding up the camera driver bootup, or maybe just testing out a new hard-coded motion sequence. We can give this task off to our agent, and it'll work for a bit, and give us a new commit. But this isn't half the work needed to get this onto an arm and working. 
+
+So how do we give the model the ability to verify? Again, this is a multi-fold problem, but this could look like integrating a camera/vision system to a real piece of hardware. Building precise simulation tools that can model more than just the standard arm dynamics via Mujoco or IsaacSim. I mean full chip startup sequences, register states, thermals, you name it. Part of me thinks that this are needs focus, and there's plenty of companies and research being done in creating verifiable physics simulations. But another part of me sees a path to this outcome via distilled world models 
+
+
