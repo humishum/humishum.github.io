@@ -4,7 +4,7 @@ import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
 
 export async function generateStaticParams() {
-  let posts = getBlogPosts('blog')
+  let posts = getBlogPosts('thought-stream')
 
   return posts.map((post) => ({
     slug: post.slug,
@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   params = await params;
-  let post = getBlogPosts('blog').find((post) => post.slug === params.slug)
+  let post = getBlogPosts('thought-stream').find((post) => post.slug === params.slug)
   if (!post) {
     return
   }
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }) {
 
 export default async function Blog({ params }) {
   params = await params;
-  let post = getBlogPosts('blog').find((post) => post.slug === params.slug)
+  let post = getBlogPosts('thought-stream').find((post) => post.slug === params.slug)
 
   if (!post) {
     notFound()
