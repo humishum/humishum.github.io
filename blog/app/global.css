@@ -39,6 +39,31 @@ html {
 body {
   color: black;
 }
+
+body:has(.home-page) {
+  min-height: 100vh;
+}
+
+body:has(.home-page) main {
+  min-height: calc(100vh - 4rem);
+}
+
+body:has(.home-page) aside {
+  margin-bottom: clamp(1.5rem, 6vh, 4rem);
+}
+
+body:has(.home-page) footer {
+  margin-bottom: 0;
+}
+
+body:has(.home-page) footer ul {
+  margin-top: clamp(1.5rem, 5vh, 2.5rem);
+}
+
+body:has(.home-page) footer p {
+  margin-top: 1rem;
+}
+
 .prose { 
   color: black;
 }

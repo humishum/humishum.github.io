@@ -9,7 +9,7 @@ export default async function sitemap() {
     }))
   )
 
-  let routes = ['', ...postSections.map((section) => `/${section}`)].map((route) => ({
+  let routes = ['', ...postSections.map((section) => `/${section}`), '/shots'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))

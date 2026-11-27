@@ -1,16 +1,12 @@
-import { BlogPosts } from 'app/components/posts'
-import styles from '../styles/Home.module.css';
-
 export default function Home() { 
   
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen font-sans text-center">
+    <div className="home-page flex flex-1 flex-col items-center justify-center font-sans text-center">
       <h1 className="text-4xl font-bold text-center">humdaan's internet garage</h1>
-      <nav className="flex space-x-6 mt-10 mb-4">
+      <nav className="mt-8 mb-4 flex flex-wrap justify-center gap-x-6 gap-y-2">
         <a href="/blog" className="text-3xl text-blue-500 hover:text-blue-700">blog</a>
         <a href="/thought-stream" className="text-3xl text-green-500 hover:text-green-700">thought stream</a>
-        {/* <a href="/apps" className="text-3xl text-green-500 hover:text-green-700">apps</a> */}
-        {/* <a href="/shots" className="text-3xl text-orange-500 hover:text-orange-700">shots</a> */}
+        <a href="/shots" className="text-3xl text-orange-500 hover:text-orange-700">shots</a>
       </nav>
       <section className="mt-4 text-lg text-center max-w-2xl">
         <p>
@@ -19,8 +15,7 @@ export default function Home() {
         
         </p>
       </section>
-      <br></br><br></br>
-      <div className="flex space-x-4 items-center justify-center">
+      <div className="mt-10 flex items-center justify-center space-x-4">
         <a href="https://x.com/humishum" target="_blank" rel="noopener noreferrer">
           <span className="[&>svg]:h-7 [&>svg]:w-7 [&>svg]:fill-black flex items-center">
             <svg
