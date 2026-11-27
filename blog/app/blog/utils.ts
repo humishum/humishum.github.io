@@ -1,6 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 
+export const postSections = ['blog', 'thought-stream'] as const
+
 type Metadata = {
   title: string
   publishedAt: string

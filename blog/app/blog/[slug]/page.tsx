@@ -1,7 +1,9 @@
 import { notFound } from 'next/navigation'
 import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
-import { baseUrl } from 'app/sitemap'
+import { baseUrl, getPostImageUrl } from 'app/site'
+
+export const dynamicParams = false
 
 export async function generateStaticParams() {
   let posts = getBlogPosts('blog')
@@ -24,9 +26,7 @@ export async function generateMetadata({ params }) {
     summary: description,
     image,
   } = post.metadata
-  let ogImage = image
-    ? image
-    : `${baseUrl}/og?title=${encodeURIComponent(title)}`
+  let ogImage = getPostImageUrl('blog', post.slug, image)
 
   return {
     title,
@@ -73,9 +73,7 @@ export default async function Blog({ params }) {
             datePublished: post.metadata.publishedAt,
             dateModified: post.metadata.publishedAt,
             description: post.metadata.summary,
-            image: post.metadata.image
-              ? `${baseUrl}${post.metadata.image}`
-              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
+            image: getPostImageUrl('blog', post.slug, post.metadata.image),
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               '@type': 'Person',
