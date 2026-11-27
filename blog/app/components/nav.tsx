@@ -10,6 +10,9 @@ const navItems = {
   '/shots': {
     name: 'shots',
   },  
+  '/thought-stream': {
+    name: 'thought stream',
+  },
 }
 
 export function Navbar() {
